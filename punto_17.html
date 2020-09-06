@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.::Punto 16::.</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    var cont = 0;
+
+    var a =  parseInt(prompt('Ingrese el número: '));
+
+    for(var x = 1 ; x <= a ; x++){
+        console.log(x);
+        if(a%x == 0){
+            cont++;
+            
+            if(cont > 2){
+                break;
+            }
+        }
+    }
+
+    if(cont == 2){
+        document.write('El número ' + a +' SI es un número primo');
+    } else if (cont > 2){
+        document.write('El número ' + a +' NO es un número primo');
+    }
+
+    
+</script>
+
+
+</html>

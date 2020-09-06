@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.::Punto 10::.</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    var cont = 0;
+
+    var a =  prompt('Ingrese la frase: ');
+    
+    var b = a.split("");
+
+    var c = new Array();
+
+    for(var x = 0 ; x < b.length ; x++){
+        if(b[x] === "a" || b[x] === "A"){
+            c.push(b[x]);
+        } else  if(b[x] === "e" || b[x] === "E"){
+            c.push(b[x]);
+        } else  if(b[x] === "i" || b[x] === "I"){
+            c.push(b[x]);
+        } else  if(b[x] === "0" || b[x] === "O"){
+            c.push(b[x]);
+        } else  if(b[x] === "u" || b[x] === "U"){
+            c.push(b[x]);
+        } 
+    }
+
+    document.write(c)
+    
+</script>
+
+
+</html>

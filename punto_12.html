@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.::Punto 12::.</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    var c_a = 0;
+    var c_e = 0;
+    var c_i = 0; 
+    var c_o = 0;
+    var c_u = 0;
+
+    var a =  prompt('Ingrese la frase: ');
+    
+    var b = a.split("");
+
+    for(var x = 0 ; x < b.length ; x++){
+        if(b[x] === "a" || b[x] === "A"){
+            c_a++;
+        } else  if(b[x] === "e" || b[x] === "E"){
+            c_e++;
+        } else  if(b[x] === "i" || b[x] === "I"){
+            c_i++;
+        } else  if(b[x] === "0" || b[x] === "O"){
+            c_o++;
+        } else  if(b[x] === "u" || b[x] === "U"){
+            c_u++;
+        } 
+    }
+
+    document.write(
+        "Cantidad de Vocales: <br>"+
+        "<ul> <li>Cantidad de a: "
+        + c_a +" </li><li>Cantidad de e: "
+        + c_e +"</li><li>Cantidad de i: "
+        + c_i +"</li><li>Cantidad de o: "
+        + c_o +"</li><li>Cantidad de u: "
+        + c_u +"</li></ul>");
+    
+</script>
+
+
+</html>

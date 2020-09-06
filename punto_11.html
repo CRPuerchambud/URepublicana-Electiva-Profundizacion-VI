@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.::Punto 11::.</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    var cont = 0;
+
+    var a =  prompt('Ingrese la frase: ');
+    
+    var b = a.split("");
+
+    var c = new Array();
+
+    for(var x = 0 ; x < b.length ; x++){
+        if(b[x] === "a" || b[x] === "A"){
+            cont++;
+        } else  if(b[x] === "e" || b[x] === "E"){
+            cont++;
+        } else  if(b[x] === "i" || b[x] === "I"){
+            cont++;
+        } else  if(b[x] === "0" || b[x] === "O"){
+            cont++;
+        } else  if(b[x] === "u" || b[x] === "U"){
+            cont++;
+        } 
+    }
+
+    document.write("Cantidad de Vocales: " + cont)
+    
+</script>
+
+
+</html>

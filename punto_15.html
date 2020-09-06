@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.::Punto 15::.</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    var a =  parseInt(prompt('Ingrese el número: '));
+    
+    document.write('El número ' + a + ' es divisible por: <br>');
+
+    document.write('<ul>');
+
+    for(var x = 1 ; x <= a ; x++){
+        if(a%x == 0){
+            document.write('<li>Es divisible por '+ x +'.</li>');
+        }
+    }
+
+    document.write('</ul>');
+    
+</script>
+
+
+</html>

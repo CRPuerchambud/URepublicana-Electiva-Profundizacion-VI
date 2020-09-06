@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.::Punto 14::.</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    var a =  parseInt(prompt('Ingrese el número: '));
+    
+    document.write('El número ' + a + ' es divisible por: <br>');
+
+    document.write('<ul>');
+
+    if (a%2 == 0){
+        document.write('<li>Es divisible por 2.</li>');
+    }
+    if (a%3 == 0){
+        document.write('<li>Es divisible por 3.</li>');
+    }
+    if (a%5 == 0){
+        document.write('<li>Es divisible por 5.</li>');
+    }
+    if (a%7 == 0){
+        document.write('<li>Es divisible por 7.</li>');
+    } 
+    
+    if(a%2 != 0 && a%3 != 0 && a%5 != 0 && a%7 != 0){
+        document.write('<li>POR NINGUNO</li>');
+    }
+
+    document.write('</ul>');
+    
+</script>
+
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.::Punto 9::.</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    var cont = 0;
+
+    var a =  prompt('Ingrese la frase: ');
+    
+    var b = a.split("");
+
+    for(var x = 0 ; x < b.length ; x++){
+        if(b[x] === "a" || b[x] === "A"){
+            cont++;
+        }
+    }
+
+    document.write("La letra aparece A " + cont + " veces.")
+    
+</script>
+
+
+</html>
